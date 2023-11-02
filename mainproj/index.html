@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<!-- yes i am aware that you can use a css or style class im just lazy shut up -->
+<head>
+    <title>sm64 wasm</title>
+    <link rel="icon" href="./favicon.png">
+</head>
+<body style="background-color:black">
+<a style="color:skyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./sm64/sm64.us.html">Play Mario 64</a>
+<br>
+<a style="color:skyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./soncic/sonic1.html">Play Sonic 1</a>
+<br>
+<a style="color:skyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./soncic2/sonic2.html">Play Sonic 2</a>
+<br>
+<a style="color:skyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./soncicCD/sonicCD.html">Play Sonic CD</a>
+<br>
+<a style="color:navyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./mania/mania.html">Play Sonic Mania</a>
+<br>
+<a style="color:skyblue;text-align:center;font-family:sans-serif;font-size:45px;text-decoration:none" href="./zelda3/zelda3.html">Play The Legend Of Zelda: A Link to the Past</a>
+<h3 style="color:white;font-family:sans-serif">
+Games currently active: SM64, Sonic CD (save non-functional), Sonic Mania (save non-functional) and Zelda 3
+</h3>
+<h3 style="color:white;font-family:sans-serif">
+	Note: For Sonic Mania, due to the high file size of the RSDK data file required for the game to be playable, it'll take somewhat long of a time to get to the splash screen depending on your download speed. Another thing to note is that it requires at least 2 cores, 1 GB RAM, and the game speed is also dependent on refresh rate. The baseline refresh rate is 60 hz, and having a refresh rate such as 75 hz would cause the game to run 1.25x as fast, 45 hz would cause the game to run 0.75x as fast, and so on.
+</h3>
+<br>
+<h3 style="color:white;font-family:sans-serif">
+	CRITICAL: If you have visited this website before and some pages aren't loading, try doing a hard refresh (CTRL + SHIFT + R). The new method uses a coi serviceworker that only applies when specified in the HTML file, so this file must be redownloaded.
+</h3>
+<br>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Controls for SM64</h1>
+<h3 style="font-family:sans-serif;color:white">WASD - Movement
+    <br>
+L - Jump (A)
+<br>
+, - Punch/Grab (B) 
+<br>
+K - Crouch (Z)
+<br>
+Arrow Keys - Camera Movement (C Stick)
+<br>
+Spacebar - Start
+<br>
+Right Shift - Switch Camera Perspectives (R)
+<br>
+</h3>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Controls for Sonic 1 / 2</h1>
+<h3 style="font-family:sans-serif;color:white">WASD - Movement
+    <br>
+L - Jump and Select (A)
+<br>
+; - Pause and Back (B)
+<br>
+Enter - Start
+<br>
+Mouse 1 - Select / Start game (Sonic 2)
+<br>
+</h3>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Controls for Sonic CD</h1>
+<h3 style="font-family:sans-serif;color:white">WASD - Movement
+    <br>
+L - Jump and Select (A)
+; - Jump and Back (B)
+' - Jump and Select (C)
+<br>
+Enter - Start and Main Menu
+<br>
+</h3>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Controls for Sonic Mania</h1>
+<h3 style="font-family:sans-serif;color:white">Up, Down, Left, Right arrow - Movement
+    <br>
+A - Jump and Select
+<br>
+S - Jump and Back
+<br>
+Q - Jump and Delete
+<br>
+W - Auxiliary
+<br>
+Enter - Start and Main Menu
+<br>
+</h3>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Controls for Zelda3</h1>
+<h3 style="font-family:sans-serif;color:white">WASD - Movement
+    <br>
+P - A
+<br>
+L - B
+<br>
+O - X
+<br>
+K - Y
+<br>
+Q - L
+<br>
+E - R
+<br>
+Enter - Start
+<br>
+Tab - Select
+<br>
+Note: These controls map to the SNES controller, since that was where this game originally was from.
+</h3>
+<hr>
+<h1 style="font-family:sans-serif;color:white">Current changes</h1>
+<ul>
+	<li style="font-family:sans-serif;color:white">Added Sonic Mania (probably biggest update in a while)</li>
+  <li style="font-family:sans-serif;color:white">The Legend of Zelda: A Link to the Past added</li>
+  <li style="font-family:sans-serif;color:white">Sonic 1/2 removed due to debug mode erroneously being accessible</li>
+	<li style="font-family:sans-serif;color:white">Compiled binaries with pthreads support (multithreading?)</li>
+	<li style="font-family:sans-serif;color:white">Add Sonic 2</li>
+	<li style="font-family:sans-serif;color:white">Changed Sonic 1 and 2 source</li>
+	<li style="font-family:sans-serif;color:white">Locked the world's biggest crutch in Sonic 1</li>
+</ul>
+<h1 style="font-family:sans-serif;color:white">Thanks to the SM64 DECOMP team, the SM64 PC PORT team, Retro Engine modders, Zelda3 decompilation contributors, and the Emscripten contributors.</h1>
+<br>
+<h1 style="font-family:sans-serif;color:white">Most of all, thanks to the Sonic Team, Nintendo EAD, and those who made the creation of these games possible.</h1>
+<a href="https://github.com/n64decomp/sm64" style="font-family:sans-serif;color:skyblue;text-decoration:none">SM64 Decomp</a>
+<br>
+<a href="https://github.com/sm64-port/sm64-port" style="font-family:sans-serif;color:skyblue;text-decoration:none">SM64 PC PORT</a>
+<br>
+<a href="https://github.com/Rubberduckycooly/Sonic-1-2-2013-Decompilation" style="font-family:sans-serif;color:skyblue;text-decoration:none">RSDKv4 Sonic</a>
+<br>
+<a href="https://github.com/Rubberduckycooly/Sonic-CD-11-Decompilation" style="font-family:sans-serif;color:skyblue;text-decoration:none">RSDKv3 Sonic CD</a>
+<br>
+<a href="https://github.com/snesrev/zelda3" style="font-family:sans-serif;color:skyblue;text-decoration:none">The Legend of Zelda: A Link to the Past</a>
+<br>
+<a href="https://github.com/emscripten-core/emsdk" style="font-family:sans-serif;color:skyblue;text-decoration:none">EMSDK</a>
+<br>
+<a href="http://www.freebsd.org/"><img src="powerbyfreebsd.gif"></a>
+<br>
+<h3 style="font-family:sans-serif;color:white">Made with a somewhat minimal amount of effort by $(you probably already know)</h3>
+<h4 style="font-family:sans-serif;color:white">any complaints redirect to /dev/null</h4>
+</body>
+</html>

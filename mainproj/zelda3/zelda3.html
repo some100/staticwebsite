@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!-- shamelessly taken off stack exchange :) -->
+<head>
+    <title>Sonic CD</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="../favicon.ico"> <!-- NOT TAKEN off stack exchange -->
+</head>
+<style>
+    background {
+        background-color: black;
+    }
+    .canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1366px;
+    height: 768px;
+}
+</style>
+<body>
+  
+    <canvas id="canvas" class="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <script type='text/javascript'>
+        var Module = {
+            canvas: (function() { return document.getElementById('canvas'); })()
+        };
+    </script>
+    <!-- Special thanks to the RSDKv3 decompilation team and Emscripten -->
+    <script src="./zelda3.js"></script>
+</body>
+</html>
